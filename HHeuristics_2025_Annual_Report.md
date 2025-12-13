@@ -260,14 +260,13 @@ Current availability exceeds 30 hours per week, with openness to contract-to-hir
 
 ## 7. Client Testimonials
 
-> *"Hunter was exceptional to work with. His research was thorough, accurate, and clearly organized, making complex regulatory topics easy to understand. He communicated proactively, delivered ahead of schedule, and consistently went above and beyond in the quality of his work. I would gladly hire him again and highly recommend him to anyone needing detailed, reliable regulatory analysis."*  
-> — **Pamela Halvo**, Regulatory Research Client
+> *"Hunter was a self-starter who produced excellent work. He was also fantastic at communicating and taking/incorporating feedback. It was a pleasure working with him and I knew I could rely on him."*  
+> — **Systematic Review & Policy Analysis Client** ★★★★★ 5.0
+> 
+> *Skills recognized: Clear Communicator, Collaborative, Committed to Quality, Reliable*
 
-> *"Hunter was fast, responsive, and easy to work with. I would 100% recommend him."*  
-> — **Jessica Charles**, Nushape LLC
-
-> *"Working with Andrew on the Argent vs. SolarWinds comparison paper was a standout experience. His clarity, focus on outcomes, and trust in my analysis helped shape one of the most impactful projects I've delivered. I appreciated his high standards and sharp editorial eye—this was a rewarding and professional collaboration."*  
-> — **Hunter Hughes** on client Andrew Blencowe, Argent
+> *"Hunter was great—quick and responsive and very helpful in completing the work."*  
+> — **Financial Valuation Task Client** ★★★★★ 5.0
 
 ---
 
