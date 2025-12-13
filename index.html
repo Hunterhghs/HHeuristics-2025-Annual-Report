@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHeuristics LLC – 2025 Annual Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1628;
+            --navy-light: #1a2d4a;
+            --gold: #c9a227;
+            --gold-light: #e8d49a;
+            --slate: #64748b;
+            --light-gray: #f8fafc;
+            --white: #ffffff;
+            --text: #1e293b;
+            --text-light: #475569;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            margin: 0.75in;
+            size: letter;
+        }
+
+        body {
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--white);
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .cover-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 3rem;
+            page-break-after: always;
+        }
+
+        .cover-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 4rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .cover-logo span {
+            color: var(--gold);
+        }
+
+        .cover-tagline {
+            font-size: 1.1rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold-light);
+            margin-bottom: 3rem;
+        }
+
+        .cover-title {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .cover-year {
+            font-size: 5rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 3rem;
+        }
+
+        .cover-meta {
+            font-size: 0.95rem;
+            color: var(--gold-light);
+            margin-top: auto;
+        }
+
+        .cover-meta p {
+            margin: 0.25rem 0;
+        }
+
+        .content {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0 0.5in;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        h3 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--navy-light);
+            margin: 1.25rem 0 0.5rem;
+        }
+
+        p {
+            margin-bottom: 0.75rem;
+            text-align: justify;
+        }
+
+        .executive-summary {
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+            padding: 1.5rem;
+            border-left: 4px solid var(--gold);
+            margin: 1.5rem 0;
+        }
+
+        .executive-summary p {
+            font-size: 1.05rem;
+            color: var(--text);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .metric-card {
+            background: var(--navy);
+            color: var(--white);
+            padding: 1.25rem;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .metric-value {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: var(--gold-light);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+
+        thead {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        th {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 0.6rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        tbody tr:nth-child(even) {
+            background: var(--light-gray);
+        }
+
+        tbody tr:hover {
+            background: #f1f5f9;
+        }
+
+        .engagement-card {
+            background: var(--white);
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.25rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            page-break-inside: avoid;
+        }
+
+        .engagement-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .engagement-title {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .engagement-rating {
+            color: var(--gold);
+            font-size: 1.1rem;
+        }
+
+        .engagement-meta {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .engagement-meta span strong {
+            color: var(--text);
+        }
+
+        blockquote {
+            background: var(--light-gray);
+            border-left: 3px solid var(--gold);
+            padding: 1rem 1.25rem;
+            margin: 1rem 0;
+            font-style: italic;
+            color: var(--text-light);
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.5rem;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .scope {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        ul, ol {
+            margin: 0.75rem 0 0.75rem 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.35rem;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .service-box {
+            background: var(--light-gray);
+            padding: 1.25rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .service-box h4 {
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonials {
+            page-break-before: always;
+        }
+
+        .testimonial {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: var(--white);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 1.25rem 0;
+        }
+
+        .testimonial blockquote {
+            background: transparent;
+            border-left-color: var(--gold);
+            color: var(--white);
+            font-size: 1.05rem;
+        }
+
+        .testimonial cite {
+            color: var(--gold-light);
+        }
+
+        .outlook-priorities {
+            counter-reset: priority;
+        }
+
+        .priority-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: var(--light-gray);
+            border-radius: 4px;
+        }
+
+        .priority-item::before {
+            counter-increment: priority;
+            content: counter(priority);
+            background: var(--gold);
+            color: var(--navy);
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .priority-content h4 {
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 0.25rem;
+        }
+
+        .priority-content p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .appendix {
+            page-break-before: always;
+        }
+
+        .appendix h1 {
+            font-size: 1.75rem;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--navy);
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        .footer-logo span {
+            color: var(--gold);
+        }
+
+        .footer-contact {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+        }
+
+        .footer-copyright {
+            font-size: 0.85rem;
+            color: var(--slate);
+            margin-top: 1rem;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        @media print {
+            .cover-page {
+                min-height: 100vh;
+            }
+            
+            .metric-card {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            thead {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .testimonial {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Page -->
+    <div class="cover-page">
+        <div class="cover-logo"><span>H</span>Heuristics</div>
+        <div class="cover-tagline">Research & Strategic Intelligence</div>
+        
+        <div class="cover-title">Annual Report</div>
+        <div class="cover-year">2025</div>
+        
+        <div class="cover-meta">
+            <p><strong>Prepared by:</strong> Hunter R. Hughes, Founder & Principal</p>
+            <p><strong>Report Date:</strong> December 2025</p>
+            <p><strong>Fiscal Year:</strong> January 2025 – December 2025</p>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Executive Summary</h1>
+        
+        <div class="executive-summary">
+            <p>2025 marked a transformational year for HHeuristics—one characterized by formal incorporation, substantial revenue growth, expanded publishing reach, and the establishment of a credible track record in high-value consulting engagements. What began as a freelance research practice has evolved into a structured, scalable research and advisory firm operating across multiple revenue channels.</p>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">LLC</div>
+                <div class="metric-label">Incorporated Oct 2025</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">$30K+</div>
+                <div class="metric-label">Upwork Earnings</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">28</div>
+                <div class="metric-label">Jobs Completed</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">85%</div>
+                <div class="metric-label">Job Success</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">84+</div>
+                <div class="metric-label">Published Reports</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">~2K</div>
+                <div class="metric-label">Substack Followers</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">5.0</div>
+                <div class="metric-label">Avg Client Rating</div>
+            </div>
+        </div>
+
+        <h1>1. Company Overview</h1>
+
+        <h2>1.1 Mission & Positioning</h2>
+        <p>HHeuristics is a research and insights firm that helps businesses make sharper, faster, and more defensible decisions in complex markets. Through consulting engagements and published research, we transform fragmented information into clear narratives and actionable recommendations for senior leaders informing strategy, product development, and capital allocation decisions.</p>
+
+        <h2>1.2 Service Lines</h2>
+        
+        <div class="two-column">
+            <div class="service-box">
+                <h4>Consulting Services (via Upwork)</h4>
+                <ul>
+                    <li>Bespoke market analysis</li>
+                    <li>Competitive intelligence</li>
+                    <li>Go-to-market strategy</li>
+                    <li>Investment-grade research</li>
+                    <li>Regulatory research & compliance</li>
+                    <li>IP valuation support</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <h4>Published Research (MarketResearch.com)</h4>
+                <ul>
+                    <li>Data-driven market research reports</li>
+                    <li>Quantitative market sizing & forecasting</li>
+                    <li>Technology trend analysis</li>
+                    <li>Regulatory dynamics assessment</li>
+                    <li>Competitive landscape mapping</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <h4>Thought Leadership (Substack)</h4>
+            <p>Ongoing analysis and industry commentary with newsletter distribution to ~2,000 followers and 66 published articles.</p>
+        </div>
+
+        <h2>1.3 Corporate Formation</h2>
+        <p>On <strong>October 21, 2025</strong>, HHeuristics was formally incorporated as a Limited Liability Company in the State of North Carolina (SOSID: 3151646), marking a critical milestone in the firm's professionalization and growth trajectory.</p>
+        
+        <table>
+            <thead>
+                <tr><th>Field</th><th>Details</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Registered Agent</td><td>Hunter Richard Hughes</td></tr>
+                <tr><td>Principal</td><td>Hunter Richard Hughes</td></tr>
+                <tr><td>Jurisdiction</td><td>North Carolina, USA</td></tr>
+                <tr><td>Filing Date</td><td>October 21, 2025</td></tr>
+            </tbody>
+        </table>
+
+        <div class="page-break"></div>
+
+        <h1>2. Financial Performance</h1>
+
+        <h2>2.1 Revenue Summary</h2>
+        <table>
+            <thead>
+                <tr><th>Revenue Channel</th><th>2025 Revenue</th><th>Notes</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Upwork Consulting</td><td>$30,000+</td><td>28 completed contracts</td></tr>
+                <tr><td>MarketResearch.com</td><td>Active</td><td>84 published reports ($250-$750 each)</td></tr>
+            </tbody>
+        </table>
+
+        <h2>2.2 Upwork Platform Metrics</h2>
+        <table>
+            <thead>
+                <tr><th>Metric</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Total Earnings</td><td>$30,000+</td></tr>
+                <tr><td>Completed Jobs</td><td>28</td></tr>
+                <tr><td>Total Hours Logged</td><td>139</td></tr>
+                <tr><td>Job Success Score</td><td>85%</td></tr>
+                <tr><td>Hourly Rate</td><td>$30.00/hr</td></tr>
+                <tr><td>Availability</td><td>More than 30 hrs/week</td></tr>
+            </tbody>
+        </table>
+
+        <h2>2.3 Notable 2025 Engagements</h2>
+
+        <div class="engagement-card">
+            <div class="engagement-header">
+                <div class="engagement-title">Regulatory Researcher (Consumer Lending)</div>
+                <div class="engagement-rating">★★★★★ 5.0</div>
+            </div>
+            <div class="engagement-meta">
+                <span><strong>Client:</strong> Pamela Halvo</span>
+                <span><strong>Value:</strong> $3,000.00</span>
+                <span><strong>Duration:</strong> Jul 7 – Nov 19, 2025</span>
+                <span><strong>Type:</strong> Fixed Price</span>
+            </div>
+            <blockquote>
+                "Hunter was exceptional to work with. His research was thorough, accurate, and clearly organized, making complex regulatory topics easy to understand. He communicated proactively, delivered ahead of schedule, and consistently went above and beyond in the quality of his work. I would gladly hire him again and highly recommend him to anyone needing detailed, reliable regulatory analysis."
+                <cite>— Pamela Halvo</cite>
+            </blockquote>
+            <p class="scope"><strong>Scope:</strong> In-depth legal research on state and federal consumer lending laws, including licensing requirements, disclosure rules, fee caps, and advertising restrictions. Delivered jurisdictional summaries, regulatory matrices, and written legal analyses.</p>
+        </div>
+
+        <div class="engagement-card">
+            <div class="engagement-header">
+                <div class="engagement-title">IP Valuation Specialist</div>
+                <div class="engagement-rating">★★★★★ 5.0</div>
+            </div>
+            <div class="engagement-meta">
+                <span><strong>Client:</strong> Jessica Charles, Nushape LLC</span>
+                <span><strong>Value:</strong> $2,029.98 + $30 bonus</span>
+                <span><strong>Duration:</strong> Jul 24 – Sep 21, 2025</span>
+                <span><strong>Type:</strong> Fixed Price</span>
+            </div>
+            <blockquote>
+                "Hunter was fast, responsive, and easy to work with. I would 100% recommend him."
+                <cite>— Jessica Charles, Nushape LLC</cite>
+            </blockquote>
+            <p class="scope"><strong>Scope:</strong> IP valuation report supporting internal asset transfer as part of corporate restructure. Delivered credible, audit-worthy valuation suitable for tax documentation and future audit defense.</p>
+        </div>
+
+        <div class="engagement-card">
+            <div class="engagement-header">
+                <div class="engagement-title">Comparison Paper: Argent v. SolarWinds</div>
+                <div class="engagement-rating">★★★★★ 5.0</div>
+            </div>
+            <div class="engagement-meta">
+                <span><strong>Client:</strong> Andrew Blencowe, Argent</span>
+                <span><strong>Value:</strong> $1,003.00+</span>
+                <span><strong>Duration:</strong> Mar 30 – Apr 25, 2025</span>
+                <span><strong>Type:</strong> Fixed Price (Milestone)</span>
+            </div>
+            <p class="scope"><strong>Scope:</strong> Created a seven-page comparison paper evaluating Argent's SNMP monitoring solution against SolarWinds' offering for a U.S. testing lab with arms-length product comparison standards.</p>
+        </div>
+
+        <h3>Additional 2025 Projects</h3>
+        <table>
+            <thead>
+                <tr><th>Project</th><th>Duration</th><th>Value</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Ethereum 10-Year Report</td><td>Aug – Oct 2025</td><td>$500.00</td><td>Completed</td></tr>
+                <tr><td>Battery Energy Storage Market Research</td><td>Jul – Oct 2025</td><td>$500.00</td><td>Completed</td></tr>
+            </tbody>
+        </table>
+
+        <div class="page-break"></div>
+
+        <h1>3. Published Research Portfolio</h1>
+
+        <h2>3.1 MarketResearch.com Presence</h2>
+        <p>HHeuristics maintains an active publisher profile on MarketResearch.com, offering <strong>84+ published reports</strong> across multiple industry verticals. Reports are priced between <strong>$250 and $750</strong>, reflecting depth and scope of analysis.</p>
+
+        <h2>3.2 Coverage Areas</h2>
+        <table>
+            <thead>
+                <tr><th>Domain</th><th>Report Count</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Software & Enterprise Computing</td><td>30</td></tr>
+                <tr><td>E-Commerce & IT Outsourcing</td><td>18</td></tr>
+                <tr><td>Energy & Resources</td><td>10</td></tr>
+                <tr><td>Financial Services</td><td>9</td></tr>
+                <tr><td>Computer Hardware & Networking</td><td>9</td></tr>
+                <tr><td>Manufacturing & Construction</td><td>7</td></tr>
+                <tr><td>Transportation & Shipping</td><td>5</td></tr>
+                <tr><td>Business Services & Administration</td><td>4</td></tr>
+                <tr><td>Other (Housing, Law, Defense, etc.)</td><td>12</td></tr>
+            </tbody>
+        </table>
+
+        <h2>3.3 Featured Publications (Q4 2025)</h2>
+        <ol>
+            <li><strong>AI for Grid Congestion Management</strong> – $500<br><em>Analysis of AI capabilities enabling utilities to manage grid digitalization amid electrification and renewable integration.</em></li>
+            <li><strong>Small Language Models (SLMs) for Enterprise</strong> – $750<br><em>Strategic assessment of enterprise AI's shift toward smaller, controllable, domain-specific language models.</em></li>
+            <li><strong>Electric Vehicle Consumer Adoption Trends</strong> – $500<br><em>Data-driven analysis of shifting EV adoption patterns, policy frameworks, and consumer preferences.</em></li>
+            <li><strong>Industrial Robotics Integration Services for SMEs</strong> – $250<br><em>Market analysis of robotics integration opportunities for small and medium enterprises.</em></li>
+            <li><strong>Business Intelligence & Analytics Platforms Market Outlook</strong> – $500<br><em>Comprehensive 2025-2030 market forecast for BI and analytics platforms.</em></li>
+        </ol>
+
+        <h1>4. Audience & Distribution</h1>
+
+        <h2>4.1 Substack Newsletter</h2>
+        <table>
+            <thead>
+                <tr><th>Metric</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Followers</td><td>~2,000</td></tr>
+                <tr><td>Published Reads</td><td>66</td></tr>
+                <tr><td>Platform</td><td>hheuristics.substack.com</td></tr>
+            </tbody>
+        </table>
+        <p>The Substack newsletter serves as a thought leadership channel, providing regular insights and analysis to a growing subscriber base interested in technology, finance, energy, and market dynamics.</p>
+
+        <h2>4.2 Web Presence</h2>
+        <ul>
+            <li><strong>Primary Website:</strong> hheuristics.com</li>
+            <li><strong>MarketResearch.com:</strong> Publisher Profile</li>
+            <li><strong>Upwork:</strong> Agency Profile</li>
+            <li><strong>Substack:</strong> Newsletter</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <h1>5. Professional Credentials</h1>
+
+        <h2>5.1 Founder Profile</h2>
+        <p><strong>Hunter Richard Hughes</strong><br>Founder & Principal, HHeuristics LLC</p>
+
+        <table>
+            <thead>
+                <tr><th>Credential</th><th>Details</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Education</td><td>BSBA, University of North Carolina at Chapel Hill (2018-2022)</td></tr>
+                <tr><td>Certification</td><td>Business Intelligence Data Analyst (BIDA®) – Corporate Finance Institute</td></tr>
+                <tr><td>Certification</td><td>FinTech Industry Professional (FTIP™) – Corporate Finance Institute</td></tr>
+                <tr><td>Verification</td><td>ID Verified, Phone Verified (Upwork)</td></tr>
+                <tr><td>Location</td><td>Chapel Hill, NC, USA</td></tr>
+            </tbody>
+        </table>
+
+        <h2>5.2 Core Competencies</h2>
+        <ul>
+            <li>Market research and competitive intelligence</li>
+            <li>Financial modeling and investment analysis</li>
+            <li>Regulatory research and compliance analysis</li>
+            <li>Business intelligence and data analytics</li>
+            <li>Strategic advisory and go-to-market planning</li>
+            <li>Report writing and executive communication</li>
+        </ul>
+
+        <h1>6. Strategic Initiatives & Growth</h1>
+
+        <h2>6.1 Platform Expansion</h2>
+        <p>In 2025, HHeuristics applied for publisher, provider, and partner roles with various platforms to expand distribution and revenue channels. These partnerships aim to:</p>
+        <ul>
+            <li>Increase reach beyond current MarketResearch.com presence</li>
+            <li>Access new buyer segments (institutional investors, corporate strategy teams)</li>
+            <li>Diversify revenue streams across multiple platforms</li>
+        </ul>
+
+        <h2>6.2 Data Products (Planned)</h2>
+        <p>Datasets represent a potential next step in the firm's evolution, moving beyond narrative reports to structured, machine-readable data products:</p>
+        <ul>
+            <li>Proprietary market sizing datasets</li>
+            <li>Regulatory tracking databases</li>
+            <li>Competitive intelligence datasets</li>
+            <li>Technology adoption metrics</li>
+        </ul>
+
+        <h2>6.3 Capacity & Availability</h2>
+        <p>Current availability exceeds 30 hours per week, with openness to contract-to-hire arrangements for clients seeking embedded research support. This positions HHeuristics as a flexible extension of in-house strategy, corporate development, and investment teams.</p>
+
+        <div class="page-break testimonials"></div>
+
+        <h1>7. Client Testimonials</h1>
+
+        <div class="testimonial">
+            <blockquote>
+                "Hunter was exceptional to work with. His research was thorough, accurate, and clearly organized, making complex regulatory topics easy to understand. He communicated proactively, delivered ahead of schedule, and consistently went above and beyond in the quality of his work. I would gladly hire him again and highly recommend him to anyone needing detailed, reliable regulatory analysis."
+                <cite>— Pamela Halvo, Regulatory Research Client</cite>
+            </blockquote>
+        </div>
+
+        <div class="testimonial">
+            <blockquote>
+                "Hunter was fast, responsive, and easy to work with. I would 100% recommend him."
+                <cite>— Jessica Charles, Nushape LLC</cite>
+            </blockquote>
+        </div>
+
+        <h1>8. 2026 Outlook</h1>
+
+        <h2>8.1 Strategic Priorities</h2>
+        <div class="outlook-priorities">
+            <div class="priority-item">
+                <div class="priority-content">
+                    <h4>Platform Diversification</h4>
+                    <p>Secure additional publisher/partner relationships to expand distribution</p>
+                </div>
+            </div>
+            <div class="priority-item">
+                <div class="priority-content">
+                    <h4>Data Products</h4>
+                    <p>Develop structured datasets as a new revenue stream</p>
+                </div>
+            </div>
+            <div class="priority-item">
+                <div class="priority-content">
+                    <h4>Consulting Scale</h4>
+                    <p>Increase average contract value and pursue longer-term engagements</p>
+                </div>
+            </div>
+            <div class="priority-item">
+                <div class="priority-content">
+                    <h4>Brand Building</h4>
+                    <p>Grow Substack follower base toward 5,000+</p>
+                </div>
+            </div>
+            <div class="priority-item">
+                <div class="priority-content">
+                    <h4>Report Velocity</h4>
+                    <p>Maintain and expand published research catalog</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>8.2 Revenue Targets</h2>
+        <table>
+            <thead>
+                <tr><th>Channel</th><th>2025 Baseline</th><th>2026 Target</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Consulting (Upwork)</td><td>$30,000+</td><td>$50,000+</td></tr>
+                <tr><td>Published Research</td><td>Active (84 reports)</td><td>Expand catalog + new platforms</td></tr>
+                <tr><td>Data Products</td><td>Planned</td><td>Launch pilot datasets</td></tr>
+                <tr><td>Newsletter</td><td>~2,000 followers</td><td>5,000+ followers</td></tr>
+            </tbody>
+        </table>
+
+        <h2>8.3 Operational Goals</h2>
+        <ul>
+            <li>Maintain 85%+ Job Success Score on Upwork</li>
+            <li>Achieve 5.0 average client rating</li>
+            <li>Formalize operating procedures under LLC structure</li>
+            <li>Explore team expansion for research support</li>
+        </ul>
+
+        <div class="appendix"></div>
+
+        <h1>Appendices</h1>
+
+        <h2>Appendix A: Corporate Filing Details</h2>
+        <table>
+            <thead>
+                <tr><th>Field</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Entity Name</td><td>HHeuristics LLC</td></tr>
+                <tr><td>State of Formation</td><td>North Carolina</td></tr>
+                <tr><td>Filing Date</td><td>October 21, 2025</td></tr>
+                <tr><td>SOSID</td><td>3151646</td></tr>
+                <tr><td>Document Number</td><td>C202528200010</td></tr>
+                <tr><td>Registered Agent</td><td>Hunter Richard Hughes</td></tr>
+                <tr><td>Registered Address</td><td>7 Davis Love Drive, Chapel Hill, NC 27517</td></tr>
+                <tr><td>County</td><td>Chatham</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Appendix B: Key Dates</h2>
+        <table>
+            <thead>
+                <tr><th>Date</th><th>Milestone</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>March 30, 2025</td><td>Argent comparison paper commenced</td></tr>
+                <tr><td>April 25, 2025</td><td>Argent project completed</td></tr>
+                <tr><td>July 7, 2025</td><td>Regulatory research engagement commenced</td></tr>
+                <tr><td>July 23, 2025</td><td>Battery storage research commenced</td></tr>
+                <tr><td>July 24, 2025</td><td>IP valuation project commenced</td></tr>
+                <tr><td>August 3, 2025</td><td>Ethereum report commenced</td></tr>
+                <tr><td>September 21, 2025</td><td>IP valuation completed</td></tr>
+                <tr><td><strong>October 21, 2025</strong></td><td><strong>HHeuristics LLC incorporated</strong></td></tr>
+                <tr><td>October 25-26, 2025</td><td>Battery/Ethereum reports completed</td></tr>
+                <tr><td>November 19, 2025</td><td>Regulatory research completed</td></tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <div class="footer-logo"><span>H</span>Heuristics</div>
+            <div class="footer-contact">
+                Suite 962, 37 Westminster Buildings, Theatre Square<br>
+                Nottingham, NG1 6LG, United Kingdom<br>
+                <strong>Web:</strong> hheuristics.com
+            </div>
+            <div class="footer-copyright">© 2025 HHeuristics LLC. All rights reserved.</div>
+        </div>
+    </div>
+</body>
+</html>
+
