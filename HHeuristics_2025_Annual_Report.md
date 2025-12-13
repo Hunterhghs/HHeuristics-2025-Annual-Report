@@ -216,7 +216,7 @@ Founder & Principal, HHeuristics LLC
 
 | Credential | Details |
 |------------|---------|
-| Education | BSBA, University of North Carolina at Chapel Hill (2018-2022) |
+| Education | BSBA |
 | Certification | Business Intelligence Data Analyst (BIDA®) – Corporate Finance Institute |
 | Certification | FinTech Industry Professional (FTIP™) – Corporate Finance Institute |
 | Verification | ID Verified, Phone Verified (Upwork) |
