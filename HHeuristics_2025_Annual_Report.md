@@ -3,7 +3,7 @@
 
 ---
 
-**Prepared by:** Hunter R. Hughes, Founder & Principal  
+**Prepared by:** Hunter R. Hughes, Founder & CEO  
 **Report Date:** December 2025  
 **Fiscal Year:** January 2025 – December 2025
 
@@ -60,7 +60,7 @@ HHeuristics is a research and insights firm that helps businesses make sharper, 
 On **October 21, 2025**, HHeuristics was formally incorporated as a Limited Liability Company in the State of North Carolina (SOSID: 3151646), marking a critical milestone in the firm's professionalization and growth trajectory.
 
 **Registered Agent:** Hunter Richard Hughes  
-**Principal:** Hunter Richard Hughes  
+**CEO:** Hunter Richard Hughes  
 **Jurisdiction:** North Carolina, USA
 
 ---
@@ -212,7 +212,7 @@ The Substack newsletter serves as a thought leadership channel, providing regula
 ### 5.1 Founder Profile
 
 **Hunter Richard Hughes**  
-Founder & Principal, HHeuristics LLC
+Founder & CEO, HHeuristics LLC
 
 | Credential | Details |
 |------------|---------|
@@ -358,7 +358,7 @@ Theatre Square
 Nottingham, NG1 6LG  
 United Kingdom
 
-**Principal:** Hunter Richard Hughes  
+**CEO:** Hunter Richard Hughes  
 **Email:** Available via hheuristics.com  
 **Web:** [hheuristics.com](https://www.hheuristics.com)
 
