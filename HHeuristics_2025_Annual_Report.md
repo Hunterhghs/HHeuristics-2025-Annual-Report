@@ -115,16 +115,16 @@ On **October 21, 2025**, HHeuristics was formally incorporated as a Limited Liab
 
 ---
 
-#### Comparison Paper: Argent v. SolarWinds
+#### Comparison Paper Series: Argent v. SolarWinds
 - **Client:** Andrew Blencowe, Argent
 - **Duration:** March 30, 2025 – April 25, 2025
-- **Contract Value:** $1,003.00+ (Fixed Price, milestone-based)
+- **Contract Value:** $11,503.00 (Fixed Price, milestone-based)
 - **Rating:** ★★★★★ 5.0
 
 > *"Working with Andrew on the Argent vs. SolarWinds comparison paper was a standout experience. His clarity, focus on outcomes, and trust in my analysis helped shape one of the most impactful projects I've delivered."*
 > — Hunter Hughes
 
-**Scope:** Created a seven-page comparison paper evaluating Argent's FREE SNMP monitoring solution against SolarWinds' offering for a U.S. testing lab with arms-length product comparison standards.
+**Scope:** Delivered a series of 50-page comparison reports evaluating Argent's SNMP monitoring solution against SolarWinds' offering for a U.S. testing lab with arms-length product comparison standards.
 
 ---
 
@@ -201,7 +201,7 @@ The Substack newsletter serves as a thought leadership channel, providing regula
 ### 4.2 Web Presence
 
 - **Primary Website:** [hheuristics.com](https://www.hheuristics.com)
-- **MarketResearch.com:** [Publisher Profile](https://www.marketresearch.com/HHeuristics-v4344/)
+- **MarketResearch.com:** [Publisher Profile](https://www.marketresearch.com/HHeuristics-v4344/) — 84+ published reports
 - **Upwork:** [Agency Profile](https://www.upwork.com/agencies/hheuristics)
 - **Substack:** [Newsletter](https://hheuristics.substack.com)
 
