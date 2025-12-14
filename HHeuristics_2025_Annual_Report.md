@@ -219,7 +219,6 @@ Founder & CEO, HHeuristics LLC
 | Education | BSBA |
 | Certification | Business Intelligence Data Analyst (BIDA®) – Corporate Finance Institute |
 | Certification | FinTech Industry Professional (FTIP™) – Corporate Finance Institute |
-| Verification | ID Verified, Phone Verified (Upwork) |
 | Location | Chapel Hill, NC, USA |
 
 ### 5.2 Core Competencies
