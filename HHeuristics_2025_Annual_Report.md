@@ -53,7 +53,7 @@ HHeuristics is a research and insights firm that helps businesses make sharper, 
 **Thought Leadership (via Substack)**
 - Ongoing analysis and industry commentary
 - Newsletter distribution to ~2,000 followers
-- 66 published reads/articles
+- 113 published articles
 
 ### 1.3 Corporate Formation
 
@@ -193,7 +193,7 @@ HHeuristics maintains an active publisher profile on MarketResearch.com, offerin
 | Metric | Value |
 |--------|-------|
 | Followers | ~2,000 |
-| Published Reads | 66 |
+| Published Reads | 113 |
 | Platform | hheuristics.substack.com |
 
 The Substack newsletter serves as a thought leadership channel, providing regular insights and analysis to a growing subscriber base interested in technology, finance, energy, and market dynamics.
